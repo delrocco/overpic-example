@@ -164,22 +164,19 @@ headsep=0.25in
 
 % Table of Contents
 \tableofcontents
+\vspace{0.5in}
+
+\begin{homeworkProblem}[Where's the code?]
+Instead of textualizing the \LaTeX~in this document, as was done originally (and which was difficult to copy and paste), it is recommended that you just inspect the code directly. If you found this template on \hrefcol{https://www.overleaf.com}{Overleaf}{blue}, you can see the code already in the editor. If you happened upon this example as a document, the  \hrefcol{https://github.com/delrocco/overpic-example}{code is in this repository}{blue}. Please feel free to steal anything that helps you :).
+\vspace{0.1in}
+%\problemAnswer[Code]{Just view the \LaTeX~code in the repository.}
+\end{homeworkProblem}
+
 \newpage
 
 %----------------------------------------------------------------------------------------
 
-\begin{homeworkProblem}[Where's the code?]
-
-Instead of textualizing the \LaTeX~in this document, as was done originally (and which was difficult to copy and paste), it is recommended that you just inspect the code directly. If you found this document on Overleaf, you can see the code already. If someone shared this with you, the code is in \hrefcol{https://github.com/delrocco/overpic-example}{this repository}{blue}.
-
-\end{homeworkProblem}
-
-%----------------------------------------------------------------------------------------
-
-\begin{homeworkProblem}[How do I overlay text onto a figure?]
-
-\problemAnswer[Code]{Just view the \LaTeX~code in the repository.}
-\vspace{0.1in}
+\begin{homeworkProblem}[How do I overlay text onto an image?]
 
 \problemAnswer[Result]{
 \frame{
@@ -199,9 +196,6 @@ Instead of textualizing the \LaTeX~in this document, as was done originally (and
 
 \begin{homeworkProblem}[How do I superimpose a grid for easy alignment?]
 
-\problemAnswer[Code]{Just view the \LaTeX~code in the repository.}
-\vspace{0.1in}
-
 \problemAnswer[Result]{
 \vspace{0.1in}
 \hspace{0.1in}
@@ -214,12 +208,10 @@ Instead of textualizing the \LaTeX~in this document, as was done originally (and
 
 %----------------------------------------------------------------------------------------
 
-\begin{homeworkProblem}[How do I draw cirles, lines and polygons over my figure?]
-
-\problemAnswer[Code]{Just view the \LaTeX~code in the repository.}
-\vspace{0.1in}
+\begin{homeworkProblem}[How do I draw cirles, lines and polygons over an image?]
 
 \problemAnswer[Result]{
+\frame{
 \begin{overpic}[width=0.5\textwidth]{img/salmon.jpg}%
 \put(800,380){\color{blue}lemon}%
 \put(700,300){\color{blue}\circle{200}}%
@@ -234,15 +226,13 @@ Instead of textualizing the \LaTeX~in this document, as was done originally (and
 \put(300,40){Looks yummy, right?}%
 \end{overpic}
 }
+}
 
 \end{homeworkProblem}
 
 %----------------------------------------------------------------------------------------
 
-\begin{homeworkProblem}[How do I superimpose images over my figure?]
-
-\problemAnswer[Code]{Just view the \LaTeX~code in the repository.}
-\vspace{0.1in}
+\begin{homeworkProblem}[How do I superimpose images over an image?]
 
 \problemAnswer[Result]{
 \begin{overpic}[width=0.5\textwidth]{img/salmon.jpg}%
@@ -255,13 +245,61 @@ Instead of textualizing the \LaTeX~in this document, as was done originally (and
 
 %----------------------------------------------------------------------------------------
 
+\begin{homeworkProblem}[How do I use this to compare multiple images in a figure?]
+
+\problemAnswer[Result]{
+
+\frame{\begin{overpic}[width=0.3\textwidth]{img/salmon.jpg}%
+\put(20,590){(A)}%
+\end{overpic}}%
+~%
+\frame{\begin{overpic}[width=0.3\textwidth]{img/salmon.jpg}%
+\put(20,590){(B)}%
+\end{overpic}}%
+
+}
+
+\problemAnswer[Result]{
+
+\frame{\begin{overpic}[width=0.215\textwidth]{img/salmon.jpg}%
+\put(20,550){(a)}%
+\end{overpic}}%
+~%
+\frame{\begin{overpic}[width=0.215\textwidth]{img/salmon.jpg}%
+\put(20,550){(b)}%
+\end{overpic}}%
+~%
+\frame{\begin{overpic}[width=0.215\textwidth]{img/salmon.jpg}%
+\put(20,550){(c)}%
+\end{overpic}}%
+~%
+\frame{\begin{overpic}[width=0.215\textwidth]{img/salmon.jpg}%
+\put(20,550){(d)}%
+\end{overpic}}%
+
+}
+
+\problemAnswer[Result]{
+
+\frame{\begin{overpic}[width=0.6\textwidth]{img/salmon.jpg}%
+\put(650,10){\frame{\includegraphics[width=0.2\textwidth]{img/salmon.jpg}}}%
+\put(10,620){(1)}%
+\put(660,190){(2)}%
+\end{overpic}}%
+
+}
+
+\end{homeworkProblem}
+
+%----------------------------------------------------------------------------------------
+
 \newpage
 \begin{homeworkProblem}[What else can I do with overpic?]
 \problemAnswer{
-Here is a 1-page easy to digest doc:\\
+Here is another 1-page primer by Rolf Niepraschk to get you started:\\
 \hrefcol{http://www.ctex.org/documents/packages/graphics/opic-rel.pdf}{http://www.ctex.org/documents/packages/graphics/opic-rel.pdf}{blue}\\
 \\
-Here is the official documentation:\\
+Here is the official documentation on CTAN:\\
 \hrefcol{http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/overpic/overpic.pdf}{http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/overpic/overpic.pdf}{blue}\\
 \\
 Here is a relevant thread on the TeX StackExchange:\\
